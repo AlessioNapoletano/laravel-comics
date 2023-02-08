@@ -18,8 +18,10 @@
 <body>
     <header>
         @include('partials.header')
+        @include('partials.header-jumbo')
     </header>
-    <main class="">
+
+    <main>
         @yield('main-content')
     </main>
 
