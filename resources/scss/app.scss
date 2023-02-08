@@ -72,5 +72,14 @@ footer {
         background-image: url('../assets/img/footer-bg.jpg');
         height: 25rem;
         background-size: cover;
+
+        li {
+            color: #959595;
+        }
+    }
+
+    section.end-footer {
+        background-color: #333333;
+        padding: 1.5rem;
     }
 }
