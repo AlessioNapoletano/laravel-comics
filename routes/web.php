@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $navlist = config('headerNav.navList');
     $comicsList = config('comics.comicsList');
-
-    return view('home', ['comicsList' => $comicsList , 'navlist' => $navlist]);
+    $navElement = config('main-nav.navElement');
+    return view('home', ['comicsList' => $comicsList , 'navlist' => $navlist , 'navElement' => $navElement ]);
 });
 
