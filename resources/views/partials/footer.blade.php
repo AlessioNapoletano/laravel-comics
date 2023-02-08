@@ -1,34 +1,23 @@
 <section class="main-footer">
     <div class="left">
-        <!--DC Comics-->
         <nav>
-            <ul>
-
-            </ul>
+            @foreach ($footerNavElement as $navElement)
+                <ul class="text-light">
+                    <h2>
+                        {{ $navElement['title'] }}
+                    </h2>
+                    @foreach ($navElement['links'] as $link )
+                    <li>
+                        {{ $link }}
+                    </li>
+                    @endforeach
+                    
+                </ul>
+            @endforeach
         </nav>
-
-        <!--Shop-->
-        <nav>
-            <ul>
-
-            </ul>
-        </nav>
-
-         <!--DC-->
-         <nav>
-            <ul>
-
-            </ul>
-        </nav>
-
-        <!--Sites-->
-        <nav>
-            <ul>
-
-            </ul>
-        </nav>
-    </div>
+       
     <div class="right"></div>
+
 </section>
 
 <section class="end-footer">

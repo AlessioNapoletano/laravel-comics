@@ -17,6 +17,7 @@ Route::get('/', function () {
     $navlist = config('headerNav.navList');
     $comicsList = config('comics.comicsList');
     $navElement = config('main-nav.navElement');
-    return view('home', ['comicsList' => $comicsList , 'navlist' => $navlist , 'navElement' => $navElement ]);
+    $footerNavElement = config('footer-nav.footerNavElement');
+    return view('home', ['comicsList' => $comicsList , 'navlist' => $navlist , 'navElement' => $navElement, 'footerNavElement' => $footerNavElement]);
 });
 
