@@ -57,7 +57,7 @@ main {
     section.banner{
         background-color: #0282f9;
         color: white;
-        height: 10rem;
+        padding: 2rem;
 
         img {
             width: 60px;
@@ -65,4 +65,12 @@ main {
 
     }
 
+}
+
+footer {
+    section.main-footer {
+        background-image: url('../assets/img/footer-bg.jpg');
+        height: 25rem;
+        background-size: cover;
+    }
 }
